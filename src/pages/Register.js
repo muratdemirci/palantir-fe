@@ -13,7 +13,8 @@ function Register() {
 
   const handleValues = (e) => {
     e.preventDefault();
-    console.log(e.target.elements.name.value)
+    setInputs(e.target.elements.name.value);
+    console.log(inputs)
   }
 
   return (

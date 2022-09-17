@@ -97,7 +97,7 @@ function TweetAnalysis() {
     return (
         <div className="relative">
             <div className="absolute top-0 right-0 lg:max-w-sm">
-                <select onChange={handleChange} id="period" className="text-center items-stretch p-2 text-gray-500 border-gray-500 bg-gray-900 border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600">
+                <select style={{backgroundColor: "rgb(167, 146, 202)"}} onChange={handleChange} id="period" className="text-center items-stretch p-2 text-white bg-gray-900 border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600">
                     <option>Hourly</option>
                     <option>Daily</option>
                     <option>Monthly</option>
