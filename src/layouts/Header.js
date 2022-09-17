@@ -1,8 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./header.css";
 
 function Header() {
+
+	let isLoggedIn = localStorage.getItem("isLoggedIn");
+	let username = localStorage.getItem("username");
+	const navigate = useNavigate();
+
+	const handleLogout = () => {
+		localStorage.clear();
+
+		setTimeout(() => {
+			navigate('/');
+		}, 1000);
+	}
+
 	return (
 		<div
 			style={{ backgroundColor: "rgb(167, 146, 202)" }}
@@ -17,21 +30,47 @@ function Header() {
 				</Link>
 
 				<div>
-					<Link
-						to="/login"
-						className="ml-10 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
-					>
-						<button>Sign in</button>
-					</Link>
+					{
+						isLoggedIn ? (
+							<div>
+								<Link
+									to="/dashboard"
+									className="mr-5 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
+								>
+									<button>Dashboard</button>
+								</Link>
 
-					<Link
-						to="/register"
-						className="border-solid rounded-md border-2 border-gray-100 border-y4	
+								<label>
+									{username}
+								</label>
+
+								<button name="logout" className="mx-5 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear" onClick={handleLogout}>
+									Logout
+								</button>
+							</div>
+
+						) :
+							(
+								<div>
+									<Link
+										to="/login"
+										className="ml-10 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
+									>
+										<button>Sign in</button>
+									</Link>
+
+									<Link
+										to="/register"
+										className="border-solid rounded-md border-2 border-gray-100 border-y4	
             mx-10 delay-75 py-1.5 duration-75 transform hover:text-indigo-600 transition ease-linear"
-						style={{ hover: { color: "#d9cece" } }}
-					>
-						<button className="py-2.5 px-2">Sign up</button>
-					</Link>
+										style={{ hover: { color: "#d9cece" } }}
+									>
+										<button className="py-2.5 px-2">Sign up</button>
+									</Link>
+								</div>
+							)
+					}
+
 				</div>
 			</div>
 		</div>

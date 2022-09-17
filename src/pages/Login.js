@@ -19,6 +19,7 @@ function Login() {
 			.then((response) => {
 				localStorage.setItem("accessToken", response.data.accessToken);
 				localStorage.setItem("email", response.data.email);
+				localStorage.setItem("username", response.data.username);
 				localStorage.setItem("isLoggedIn", true);
 				setTimeout(() => {
 					navigate("/dashboard");
@@ -82,8 +83,8 @@ function Login() {
 											handleSubmit();
 										}}
 										type="submit"
-										style={{ backgroundColor: "#2663EB" }}
-										class="w-full text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-primary-600"
+										style={{ backgroundColor: "hsl(262, 57%, 75%)" }}
+										class="w-full text-white hover:bg-primary-700 focus:pink-200 focus:outline-none focus:ring-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-primary-600"
 									>
 										Sign in
 									</button>
