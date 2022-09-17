@@ -1,38 +1,36 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../layouts/Footer";
 import Header from "../layouts/Header";
-import UserService from "../services/UserService";
+import axios from "axios";
 
 function Login() {
-	const [inputs, setInputs] = useState({
-		email: "",
-		password: "",
-	});
-
 	const navigate = useNavigate();
 
-	let userService = new UserService();
-
-	const handleValues = (e) => {
+	function handleSubmit(e) {
 		e.preventDefault();
-		setInputs({
+		const formData = {
 			email: e.target.elements.email.value,
 			password: e.target.elements.password.value,
-		});
-	};
+		};
+
+		axios
+			.post("http://localhost:8090/api/v1/auth/login", formData)
+			.then((response) => {
+				localStorage.setItem("accessToken", response.data.accessToken);
+				localStorage.setItem("email", response.data.email);
+				localStorage.setItem("isLoggedIn", true);
+				setTimeout(() => {
+					navigate("/dashboard");
+				}, 1000);
+			});
+	}
 
 	useEffect(() => {
-		userService.login(inputs).then((result) => {
-			localStorage.setItem("AccessToken", result.data.accessToken);
-			localStorage.setItem("Email", result.data.email);
-			localStorage.setItem("IsLoggedIn", true);
-		});
-	}, [inputs]);
-
-	if (localStorage.getItem("IsLoggedIn")) {
-		navigate("/dashboard");
-	}
+		if (localStorage.getItem("isLoggedIn")) {
+			navigate("/dashboard");
+		}
+	}, []);
 
 	return (
 		<div>
@@ -45,7 +43,7 @@ function Login() {
 							class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0"
 						>
 							<div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-								<form class="space-y-4 md:space-y-6" onSubmit={handleValues}>
+								<form class="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
 									<div>
 										<label
 											for="email"
@@ -73,12 +71,16 @@ function Login() {
 											type="password"
 											name="password"
 											id="password"
-											placeholder="••••••••"
+											placeholder="your password"
 											class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
 											required=""
 										/>
 									</div>
+
 									<button
+										onClick={() => {
+											handleSubmit();
+										}}
 										type="submit"
 										style={{ backgroundColor: "#2663EB" }}
 										class="w-full text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-primary-600"
