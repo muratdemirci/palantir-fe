@@ -9,9 +9,7 @@ function Login() {
         <div >
             Login orta sayfası
         </div>
-        <div className='relative'>
         <Footer />
-        </div>
     </div>
   )
 }
