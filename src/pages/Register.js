@@ -10,13 +10,10 @@ function Register() {
     password: '',
     confirmPassword: ''
   })
-  const [isLogin, setIsLogin] = useState(false);
-
 
   const handleValues = (e) => {
     e.preventDefault();
     console.log(e.target.elements.name.value)
-
   }
 
   return (
@@ -50,7 +47,6 @@ function Register() {
             </div>
           </div>
         </section>
-
       </div>
       <Footer />
     </div>
