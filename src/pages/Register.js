@@ -1,34 +1,49 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import Footer from "../layouts/Footer";
 import Header from "../layouts/Header";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
-	const [inputs, setInputs] = useState({
-		email: "",
-		name: "",
-		password: "",
-		confirmPassword: "",
-	});
+	const navigate = useNavigate();
 
-	const handleValues = (e) => {
+	function handleSubmit(e) {
 		e.preventDefault();
-		setInputs(e.target.elements.name.value);
-		console.log(inputs);
-	};
+		const formData = {
+			email: e.target.elements.email.value,
+			name: e.target.elements.email.value,
+			password: e.target.elements.password.value,
+		};
+
+		axios
+			.post("http://localhost:8090/api/v1/auth/register", formData)
+			.then((response) => {
+				console.log(response);
+				setTimeout(() => {
+					navigate("/login");
+				}, 1000);
+			});
+	}
+
+	useEffect(() => {
+		if (localStorage.getItem("isLoggedIn")) {
+			navigate("/dashboard");
+		}
+	}, []);
 
 	return (
 		<div>
 			<Header />
 			<div className="m-8">
-				<section class="bg-gray-900">
+				<section>
 					<div class="flex flex-col items-center justify-center mt-8">
-						<div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+						<div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
 							<div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-								<form class="space-y-4 md:space-y-6" onSubmit={handleValues}>
+								<form class="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
 									<div>
 										<label
 											for="name"
-											class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+											class="block mb-2 text-sm font-medium text-gray-900"
 										>
 											Name
 										</label>
@@ -36,7 +51,7 @@ function Register() {
 											type="name"
 											name="name"
 											id="name"
-											class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+											class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
 											placeholder="Name"
 											required=""
 										/>
@@ -44,7 +59,7 @@ function Register() {
 									<div>
 										<label
 											for="email"
-											class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+											class="block mb-2 text-sm font-medium text-gray-900"
 										>
 											E-Mail
 										</label>
@@ -52,7 +67,7 @@ function Register() {
 											type="email"
 											name="email"
 											id="email"
-											class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+											class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
 											placeholder="name@company.com"
 											required=""
 										/>
@@ -60,7 +75,7 @@ function Register() {
 									<div>
 										<label
 											for="password"
-											class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+											class="block mb-2 text-sm font-medium text-gray-900"
 										>
 											Password
 										</label>
@@ -69,14 +84,14 @@ function Register() {
 											name="password"
 											id="password"
 											placeholder="••••••••"
-											class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+											class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
 											required=""
 										/>
 									</div>
 									<div>
 										<label
 											for="confirmPassword"
-											class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+											class="block mb-2 text-sm font-medium text-gray-900"
 										>
 											Confirm password
 										</label>
@@ -85,7 +100,7 @@ function Register() {
 											name="confirmPassword"
 											id="confirmPassword"
 											placeholder="••••••••"
-											class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+											class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
 											required=""
 										/>
 									</div>
