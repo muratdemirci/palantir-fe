@@ -9,15 +9,19 @@ import Register from "./pages/Register";
 import Main from "./pages/Main";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+let isLoggedIn = localStorage.getItem("isLoggedIn");
+
 root.render(
-	<BrowserRouter>
-		<Routes>
-			<Route path="/" element={<Main />} />
-			<Route path="/dashboard" element={<App />} />
-			<Route path="/login" element={<Login />} />
-			<Route path="/register" element={<Register />} />
-		</Routes>
-	</BrowserRouter>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="/dashboard" element={
+        isLoggedIn ? < App /> : <Main />
+      } />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 reportWebVitals();
