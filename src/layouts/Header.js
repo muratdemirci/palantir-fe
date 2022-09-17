@@ -53,6 +53,13 @@ function Header() {
 							(
 								<div>
 									<Link
+										to="/prices"
+										className="ml-10 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
+									>
+										<button>Prices</button>
+									</Link>
+
+									<Link
 										to="/login"
 										className="ml-10 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
 									>

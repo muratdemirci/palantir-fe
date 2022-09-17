@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Main from "./pages/Main";
+import Price from "./pages/Price";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 let isLoggedIn = localStorage.getItem("isLoggedIn");
@@ -18,6 +19,7 @@ root.render(
       <Route path="/dashboard" element={
         isLoggedIn ? < App /> : <Main />
       } />
+      <Route path="/prices" element={<Price />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
     </Routes>
