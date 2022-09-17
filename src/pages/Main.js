@@ -1,15 +1,15 @@
-import React from 'react'
-import Footer from '../layouts/Footer'
-import Header from '../layouts/Header'
+import React from "react";
+import Footer from "../layouts/Footer";
+import Header from "../layouts/Header";
 
 function Main() {
-  return (
-    <div>
-        <Header />
+	return (
+		<div>
+			<Header />
 
-        <Footer />
-    </div>
-  )
+			<Footer />
+		</div>
+	);
 }
 
-export default Main
+export default Main;
