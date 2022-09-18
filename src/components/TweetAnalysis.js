@@ -15,7 +15,7 @@ import { faker } from '@faker-js/faker';
 function TweetAnalysis() {
 
     const [labels, setLabels] = useState([]);
-    const [dropdownValue, setDropdownValue] = useState("Hourly");
+    const [dropdownValue, setDropdownValue] = useState("Saatlik");
 
     const months = ["ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
 
@@ -50,10 +50,6 @@ function TweetAnalysis() {
 
     useEffect(() => {
         switch (dropdownValue) {
-            case 'Günlük':
-                setLabels(['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar']);
-                console.log(labels)
-                break;
             case 'Saatlik':
                 const date = new Date();
                 const hours = [];
@@ -66,6 +62,10 @@ function TweetAnalysis() {
                     hours.push((23 - index) + ".00");
                 }
                 setLabels(hours.reverse())
+                break;
+            case 'Günlük':
+                setLabels(['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar']);
+                console.log(labels)
                 break;
             case 'Aylık':
                 const graph = [];
@@ -97,7 +97,7 @@ function TweetAnalysis() {
     return (
         <div className="relative">
             <div className="absolute top-0 right-0 lg:max-w-sm">
-                <select style={{backgroundColor: "rgb(167, 146, 202)"}} onChange={handleChange} id="period" className="text-center items-stretch p-2 text-white bg-gray-900 border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600">
+                <select style={{ backgroundColor: "rgb(167, 146, 202)" }} onChange={handleChange} id="period" className="text-center items-stretch p-2 text-white bg-gray-900 border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600">
                     <option>Saatlik</option>
                     <option>Günlük</option>
                     <option>Aylık</option>
