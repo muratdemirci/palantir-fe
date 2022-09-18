@@ -8,11 +8,13 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Main from "./pages/Main";
 import Price from "./pages/Price";
+import { ThemeProvider } from "@material-tailwind/react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 let isLoggedIn = localStorage.getItem("isLoggedIn");
 
 root.render(
+  <ThemeProvider>
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Main />} />
@@ -24,6 +26,7 @@ root.render(
       <Route path="/register" element={<Register />} />
     </Routes>
   </BrowserRouter>
+  </ThemeProvider>
 );
 
 reportWebVitals();
