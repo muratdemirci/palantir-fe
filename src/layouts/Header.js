@@ -37,7 +37,7 @@ function Header() {
 									to="/dashboard"
 									className="mr-5 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
 								>
-									<button>Dashboard</button>
+									<button>Panel</button>
 								</Link>
 
 								<label>
@@ -45,7 +45,7 @@ function Header() {
 								</label>
 
 								<button name="logout" className="mx-5 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear" onClick={handleLogout}>
-									Logout
+									Çıkış yap
 								</button>
 							</div>
 
@@ -56,28 +56,28 @@ function Header() {
 										to="/"
 										className="ml-10 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
 									>
-										<button>Homepage</button>
+										<button>Ana sayfa</button>
 									</Link>
 
 									<Link
 										to="/about"
 										className="ml-10 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
 									>
-										<button>About the project</button>
+										<button>Proje hakkında</button>
 									</Link>
 
 									<Link
 										to="/prices"
 										className="ml-10 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
 									>
-										<button>Prices</button>
+										<button>Ücretlendirme</button>
 									</Link>
 
 									<Link
 										to="/login"
 										className="ml-10 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
 									>
-										<button>Sign in</button>
+										<button>Giriş yap</button>
 									</Link>
 
 									<Link
@@ -86,7 +86,7 @@ function Header() {
             mx-10 delay-75 py-1.5 duration-75 transform hover:text-indigo-600 transition ease-linear"
 										style={{ hover: { color: "#d9cece" } }}
 									>
-										<button className="py-2.5 px-2">Sign up</button>
+										<button className="py-2.5 px-2">Kayıt ol</button>
 									</Link>
 								</div>
 							)

@@ -13,9 +13,9 @@ function Auth() {
 					</div>
 				</div>
 				<div className="text-left ">
-					<h2 className="text-purple-600 font-medium text-xl">Domination</h2>
+					<h2 className="text-purple-600 font-medium text-xl">Bitcoin Dominasyonu</h2>
 					<p className="text-purple-400">
-						lorem ipsum lorem ipsumlorem ipsumlorem ipsum
+						Kriptonun piyasa üzerindeki dominasyonu
 					</p>
 				</div>
 			</div>
@@ -30,9 +30,9 @@ function Auth() {
 					</div>
 				</div>
 				<div className="text-left ">
-					<h2 className="text-purple-600 font-medium text-xl">Correctness</h2>
+					<h2 className="text-purple-600 font-medium text-xl">Doğruluk Oranı</h2>
 					<p className="text-purple-400">
-						lorem ipsum lorem ipsumlorem ipsumlorem ipsum
+						Yapılan manipülasyonlara göre şablonların doğruluk oranı
 					</p>
 				</div>
 			</div>

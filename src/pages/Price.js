@@ -7,27 +7,27 @@ function Price() {
         <div>
             <Header />
 
-            <div className='mb-5'>
-                <p>Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+            <div className='mx-auto bg-white p-3 m-5 rounded-lg w-6/12'>
+                <p>Sizin için en uygun paketi seçin ve hemen kazanmaya başlayın.</p>
             </div>
 
             <div name="prices" className='flex justify-center gap-8'>
 
                 <div class="col-span-1 items-center shadow-lg rounded-2xl w-64 bg-white dark:bg-gray-800 p-4">
                     <p class="text-black dark:text-white text-3xl font-bold">
-                        Enterprise
+                        Giriş Seviye
                     </p>
                     <p class="text-gray-500 dark:text-gray-300 text-sm mb-4">
-                        For the basics tailwind
+                        Kripto tecrübesi olmayanlar için
                     </p>
                     <p class="text-black dark:text-white  text-3xl font-bold">
-                        $9
+                        9₺
                     </p>
                     <p class="text-gray-500 dark:text-gray-300 text-sm mb-4">
-                        Per agent per month
+                        Aylık Olarak
                     </p>
                     <button type="button" class="w-56 m-auto px-3 py-3 text-sm shadow border border-black rounded-lg text-black bg-white hover:bg-black hover:text-white dark:hover-text-gray-900 dark:hover:bg-gray-100 ">
-                        Request demo
+                        Demo İste
                     </button>
                     <ul class="text-sm text-black dark:text-white w-full mt-6 mb-6">
                         <li class="mb-3 flex items-center">
@@ -35,21 +35,21 @@ function Price() {
                                 <path d="M1152 896q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-256-544q-148 0-273 73t-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273-73-273-198-198-273-73zm768 544q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                                 </path>
                             </svg>
-                            All illimited components Tailwind
+                            Günde 1M+ istek
                         </li>
                         <li class="mb-3 flex items-center">
                             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 1792 1792">
                                 <path d="M1152 896q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-256-544q-148 0-273 73t-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273-73-273-198-198-273-73zm768 544q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                                 </path>
                             </svg>
-                            Own analitycs templates
+                            Analitik Şablonlar
                         </li>
                         <li class="mb-3 flex items-center">
                             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 1792 1792">
                                 <path d="M1152 896q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-256-544q-148 0-273 73t-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273-73-273-198-198-273-73zm768 544q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                                 </path>
                             </svg>
-                            24/24 support link
+                            7/24 sistem desteği
                         </li>
                     </ul>
                     <span class="w-56 block bg-gray-100 h-1 rounded-lg my-2">
@@ -61,28 +61,7 @@ function Price() {
                                 </path>
                             </svg>
                             <div>
-                                All free dashboard
-                                <a href="#" class="text-red-500 font-semibold">
-                                    free plan
-                                </a>
-                            </div>
-                        </li>
-                        <li class="mb-3 flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#10b981" viewBox="0 0 1792 1792">
-                                <path d="M1600 736v192q0 40-28 68t-68 28h-416v416q0 40-28 68t-68 28h-192q-40 0-68-28t-28-68v-416h-416q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h416v-416q0-40 28-68t68-28h192q40 0 68 28t28 68v416h416q40 0 68 28t28 68z">
-                                </path>
-                            </svg>
-                            <div>
-                                Best ranking
-                            </div>
-                        </li>
-                        <li class="mb-3 flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#10b981" viewBox="0 0 1792 1792">
-                                <path d="M1600 736v192q0 40-28 68t-68 28h-416v416q0 40-28 68t-68 28h-192q-40 0-68-28t-28-68v-416h-416q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h416v-416q0-40 28-68t68-28h192q40 0 68 28t28 68v416h416q40 0 68 28t28 68z">
-                                </path>
-                            </svg>
-                            <div>
-                                Chocolate and meel
+                                3 Aylık Veriler
                             </div>
                         </li>
                     </ul>
@@ -90,19 +69,19 @@ function Price() {
 
                 <div class="col-span-1 shadow-lg rounded-2xl w-64 bg-white dark:bg-gray-800 p-4">
                     <p class="text-black dark:text-white text-3xl font-bold">
-                        Essential
+                        Üst Düzey
                     </p>
                     <p class="text-gray-500 dark:text-gray-300 text-sm mb-4">
-                        For the basics tailwind
+                        Kripto tecrübesi olanlar için
                     </p>
                     <p class="text-black dark:text-white  text-3xl font-bold">
-                        $49
+                        49₺
                     </p>
                     <p class="text-gray-500 dark:text-gray-300 text-sm mb-4">
-                        Per agent per month
+                        Aylık Olarak
                     </p>
                     <button type="button" class="w-56 m-auto px-3 py-3 text-sm shadow border border-black rounded-lg text-black bg-white hover:bg-black hover:text-white dark:hover-text-gray-900 dark:hover:bg-gray-100 ">
-                        Request demo
+                        Demo İste
                     </button>
                     <ul class="text-sm text-black dark:text-white w-full mt-6 mb-6">
                         <li class="mb-3 flex items-center">
@@ -110,21 +89,21 @@ function Price() {
                                 <path d="M1152 896q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-256-544q-148 0-273 73t-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273-73-273-198-198-273-73zm768 544q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                                 </path>
                             </svg>
-                            All illimited components Tailwind
+                            Günde 5M+ istek
                         </li>
                         <li class="mb-3 flex items-center">
                             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 1792 1792">
                                 <path d="M1152 896q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-256-544q-148 0-273 73t-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273-73-273-198-198-273-73zm768 544q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                                 </path>
                             </svg>
-                            Own analitycs templates
+                            Analitik Şablonlar
                         </li>
                         <li class="mb-3 flex items-center">
                             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 1792 1792">
                                 <path d="M1152 896q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-256-544q-148 0-273 73t-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273-73-273-198-198-273-73zm768 544q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                                 </path>
                             </svg>
-                            24/24 support link
+                            7/24 sistem desteği
                         </li>
                     </ul>
                     <span class="w-56 block bg-gray-100 h-1 rounded-lg my-2">
@@ -136,10 +115,7 @@ function Price() {
                                 </path>
                             </svg>
                             <div>
-                                All free dashboard
-                                <a href="#" class="text-red-500 font-semibold">
-                                    free plan
-                                </a>
+                                Günlük Veriler
                             </div>
                         </li>
                         <li class="mb-3 flex items-center space-x-2">
@@ -148,16 +124,7 @@ function Price() {
                                 </path>
                             </svg>
                             <div>
-                                Best ranking
-                            </div>
-                        </li>
-                        <li class="mb-3 flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#10b981" viewBox="0 0 1792 1792">
-                                <path d="M1600 736v192q0 40-28 68t-68 28h-416v416q0 40-28 68t-68 28h-192q-40 0-68-28t-28-68v-416h-416q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h416v-416q0-40 28-68t68-28h192q40 0 68 28t28 68v416h416q40 0 68 28t28 68z">
-                                </path>
-                            </svg>
-                            <div>
-                                Chocolate and meel
+                                50GB'a kadar veri depolama
                             </div>
                         </li>
                     </ul>
@@ -165,19 +132,19 @@ function Price() {
 
                 <div class="col-span-1 shadow-lg rounded-2xl w-64 bg-white dark:bg-gray-800 p-4">
                     <p class="text-black dark:text-white text-3xl font-bold">
-                        Pro
+                        Profesyonel
                     </p>
                     <p class="text-gray-500 dark:text-gray-300 text-sm mb-4">
-                        For the basics tailwind
+                        Üst düzey yatırımcılar için
                     </p>
                     <p class="text-black dark:text-white  text-3xl font-bold">
-                        $99
+                        99₺
                     </p>
                     <p class="text-gray-500 dark:text-gray-300 text-sm mb-4">
-                        Per agent per month
+                        Aylık Olarak
                     </p>
                     <button type="button" class="w-56 m-auto px-3 py-3 text-sm shadow border border-black rounded-lg text-black bg-white hover:bg-black hover:text-white dark:hover-text-gray-900 dark:hover:bg-gray-100 ">
-                        Request demo
+                        Demo İste
                     </button>
                     <ul class="text-sm text-black dark:text-white w-full mt-6 mb-6">
                         <li class="mb-3 flex items-center">
@@ -185,21 +152,21 @@ function Price() {
                                 <path d="M1152 896q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-256-544q-148 0-273 73t-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273-73-273-198-198-273-73zm768 544q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                                 </path>
                             </svg>
-                            All illimited components Tailwind
+                            Günde 10M+ istek
                         </li>
                         <li class="mb-3 flex items-center">
                             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 1792 1792">
                                 <path d="M1152 896q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-256-544q-148 0-273 73t-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273-73-273-198-198-273-73zm768 544q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                                 </path>
                             </svg>
-                            Own analitycs templates
+                            Analitik Şablonlar
                         </li>
                         <li class="mb-3 flex items-center">
                             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 1792 1792">
                                 <path d="M1152 896q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-256-544q-148 0-273 73t-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273-73-273-198-198-273-73zm768 544q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                                 </path>
                             </svg>
-                            24/24 support link
+                            7/24 sistem desteği
                         </li>
                     </ul>
                     <span class="w-56 block bg-gray-100 h-1 rounded-lg my-2">
@@ -211,10 +178,7 @@ function Price() {
                                 </path>
                             </svg>
                             <div>
-                                All free dashboard
-                                <a href="#" class="text-red-500 font-semibold">
-                                    free plan
-                                </a>
+                                Saatlik veriler
                             </div>
                         </li>
                         <li class="mb-3 flex items-center space-x-2">
@@ -223,7 +187,7 @@ function Price() {
                                 </path>
                             </svg>
                             <div>
-                                Best ranking
+                                En doğru sonuç
                             </div>
                         </li>
                         <li class="mb-3 flex items-center space-x-2">
@@ -232,7 +196,7 @@ function Price() {
                                 </path>
                             </svg>
                             <div>
-                                Chocolate and meel
+                                100 GB'a kadar veri depolama
                             </div>
                         </li>
                     </ul>

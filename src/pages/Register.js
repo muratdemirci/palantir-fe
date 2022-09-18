@@ -45,7 +45,7 @@ function Register() {
 											for="name"
 											class="text-white block mb-2 text-sm font-medium"
 										>
-											Name
+											İsim
 										</label>
 										<input
 											type="name"
@@ -77,7 +77,7 @@ function Register() {
 											for="password"
 											class="text-white block mb-2 text-sm font-medium"
 										>
-											Password
+											Şifre
 										</label>
 										<input
 											type="password"
@@ -93,7 +93,7 @@ function Register() {
 											for="confirmPassword"
 											class="text-white block mb-2 text-sm font-medium"
 										>
-											Confirm password
+											Şifreyi Onayla
 										</label>
 										<input
 											type="password"
@@ -109,7 +109,7 @@ function Register() {
 										style={{ backgroundColor: "hsl(262, 57%, 75%)" }}
 										class="w-full text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-primary-600"
 									>
-										Create an account
+										Hesap Oluştur
 									</button>
 								</form>
 							</div>

@@ -12,13 +12,13 @@ function Footer() {
 				</span>
 				<ul class="flex flex-wrap items-center mt-3 text-sm dark:text-gray-400 sm:mt-0">
 					<li>
-						<a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+						<a href="#" class="mr-4 hover:underline md:mr-6 ">Hakkında</a>
 					</li>
 					<li>
-						<a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+						<a href="#" class="mr-4 hover:underline md:mr-6">Gizlilik Politikası</a>
 					</li>
 					<li>
-						<a href="#" class="hover:underline">Contact Us</a>
+						<a href="#" class="hover:underline">İletişime Geç</a>
 					</li>
 				</ul>
 			</footer>

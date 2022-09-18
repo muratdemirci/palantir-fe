@@ -17,7 +17,7 @@ function TweetAnalysis() {
     const [labels, setLabels] = useState([]);
     const [dropdownValue, setDropdownValue] = useState("Hourly");
 
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const months = ["ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
 
     ChartJS.register(
         CategoryScale,
@@ -37,7 +37,7 @@ function TweetAnalysis() {
             },
             title: {
                 display: true,
-                text: 'Palantir Tweet Analysis',
+                text: 'Palantir Tweet Analizi',
             },
         },
     };
@@ -50,11 +50,11 @@ function TweetAnalysis() {
 
     useEffect(() => {
         switch (dropdownValue) {
-            case 'Daily':
-                setLabels(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']);
+            case 'Günlük':
+                setLabels(['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar']);
                 console.log(labels)
                 break;
-            case 'Hourly':
+            case 'Saatlik':
                 const date = new Date();
                 const hours = [];
 
@@ -67,7 +67,7 @@ function TweetAnalysis() {
                 }
                 setLabels(hours.reverse())
                 break;
-            case 'Monthly':
+            case 'Aylık':
                 const graph = [];
                 for (let index = 2; index >= 0; index--) {
                     const date = new Date();
@@ -98,9 +98,9 @@ function TweetAnalysis() {
         <div className="relative">
             <div className="absolute top-0 right-0 lg:max-w-sm">
                 <select style={{backgroundColor: "rgb(167, 146, 202)"}} onChange={handleChange} id="period" className="text-center items-stretch p-2 text-white bg-gray-900 border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600">
-                    <option>Hourly</option>
-                    <option>Daily</option>
-                    <option>Monthly</option>
+                    <option>Saatlik</option>
+                    <option>Günlük</option>
+                    <option>Aylık</option>
                 </select>
             </div>
             <Line options={options} data={data} />
