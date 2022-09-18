@@ -27,18 +27,24 @@ To start the initialize the project;
 
 Homepage 
 >http://localhost:3001/
+![Homepage](/images/Homepage.png "Hompeage")
 
 About
 >http://localhost:3001/about
+![About](/images/About.png "About")
 
 Prices
 >http://localhost:3001/prices
+![Prices](/images/Pricing.png "Prices")
 
 Sign in
 >http://localhost:3001/login
+![Sign In](/images/SignIn.png "Sign In")
 
 Sign up
 >http://localhost:3001/register
+![Sign Up](/images/SignUp.png "Sign Up")
 
 Dashboard
 >http://localhost:3001/dashboard
+![Dashboard](/images/Dashboard.png "Dashboard")
