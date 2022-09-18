@@ -1,24 +1,10 @@
 import "./App.css";
-import Auth from "./components/Auth";
-import TweetAnalysis from "./components/TweetAnalysis";
-import Footer from "./layouts/Footer";
-import Header from "./layouts/Header";
+import Auth from "../components/Auth";
+import TweetAnalysis from "../components/TweetAnalysis";
+import Footer from "../layouts/Footer";
+import Header from "../layouts/Header";
 
 function App() {
-	const targets = [
-		{
-			name: "Visits",
-			value: 90,
-		},
-		{
-			name: "Income",
-			value: 75,
-		},
-		{
-			name: "Orders",
-			value: 50,
-		},
-	];
 
 	return (
 		<div class="App">

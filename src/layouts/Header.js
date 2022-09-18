@@ -53,6 +53,20 @@ function Header() {
 							(
 								<div>
 									<Link
+										to="/"
+										className="ml-10 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
+									>
+										<button>Homepage</button>
+									</Link>
+
+									<Link
+										to="/about"
+										className="ml-10 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
+									>
+										<button>About the project</button>
+									</Link>
+
+									<Link
 										to="/prices"
 										className="ml-10 delay-75 duration-75 transform hover:text-indigo-600 transition ease-linear"
 									>

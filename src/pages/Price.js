@@ -7,6 +7,10 @@ function Price() {
         <div>
             <Header />
 
+            <div className='mb-5'>
+                <p>Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+            </div>
+
             <div name="prices" className='flex justify-center gap-8'>
 
                 <div class="col-span-1 items-center shadow-lg rounded-2xl w-64 bg-white dark:bg-gray-800 p-4">
