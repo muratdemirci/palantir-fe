@@ -64,4 +64,4 @@ Dashboard
 Palantir is a micro-saas project which is analyses tweets of crypto influencers to predict the direction of the market.  
 This project was made for [Teknasyon Hackathon '22 - Yüzük Kardeşliği](https://teknasyon.com/tech/hackathon22/#/).  
 We took 2nd place among 13 teams.  
-![mordor idman yurdu :)](hackathonwin.jpeg "mordor idman yurdu :)")
+![mordor idman yurdu :)](hackathonwin.jpeg "mordor idman yurdu :))")
